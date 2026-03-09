@@ -1,0 +1,71 @@
+.philosophy {
+  position: relative;
+}
+
+.philosophy-inner {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  overflow: hidden;
+}
+
+.philosophy-text {
+  padding: clamp(48px, 6vw, 80px) clamp(32px, 5vw, 64px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.philosophy-terminal {
+  position: relative;
+}
+
+
+.philosophy-q {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(26px, 3.5vw, 36px);
+  font-style: italic;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 40px;
+  line-height: 1.3;
+}
+
+.philosophy-body {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(15px, 1.8vw, 20px);
+  line-height: 1.7;
+  color: var(--text-44);
+  max-width: 620px;
+}
+
+.philosophy-body p {
+  margin-bottom: 8px;
+}
+
+.philosophy-body .em {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.philosophy-body .accent-block {
+  color: var(--accent-blue);
+  display: block;
+  margin: 24px 0;
+  line-height: 1.6;
+}
+
+.philosophy-body .spacer {
+  display: block;
+  margin-top: 36px;
+}
+
+@media (max-width: 900px) {
+  .philosophy-inner {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+}

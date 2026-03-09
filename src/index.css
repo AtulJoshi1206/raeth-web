@@ -1,0 +1,175 @@
+/* ============================================
+   RAETH — Global Styles
+   React + Vite + Framer Motion
+   ============================================ */
+
+/* --- Reset & Base --- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Backgrounds */
+  --bg: #050507;
+  --bg-secondary: #0B0D10;
+  --bg-elevated: #0F1217;
+  --bg-hover: #141820;
+
+  /* Accents */
+  --accent-blue: #00E6FF;
+  --accent-electric: #3ABEFF;
+  --accent-purple: #7A5CFF;
+  --accent-orange: #FF6B00;
+  --accent-red: #FF4D4D;
+
+  /* Text hierarchy */
+  --text-primary: #E8EDF2;
+  --text-secondary: #A6B0BF;
+  --text-muted: #6B7280;
+  --text-50: rgba(255, 255, 255, 0.50);
+  --text-44: rgba(255, 255, 255, 0.44);
+  --text-28: rgba(255, 255, 255, 0.28);
+
+  /* Borders */
+  --border: rgba(255, 255, 255, 0.06);
+  --border-strong: rgba(255, 255, 255, 0.12);
+  --border-hero: rgba(255, 255, 255, 0.08);
+  --border-products: rgba(0, 230, 255, 0.12);
+  --border-pipeline: rgba(122, 92, 255, 0.12);
+  --border-domains: rgba(255, 77, 77, 0.12);
+
+  /* Layout */
+  --max-w: 1280px;
+  --gap: 20px;
+  --pad: 20px;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --pad: 24px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: 'Inter', -apple-system, sans-serif;
+  overflow-x: hidden;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Space Grotesk', sans-serif;
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+}
+
+::selection {
+  background: var(--accent-purple);
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* --- Layout Shell --- */
+.site-wrapper {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 var(--pad);
+}
+
+/* --- Utility --- */
+.text-gradient {
+  background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+  display: inline-block;
+  padding: 4px 12px;
+  margin-left: -2px;
+}
+
+/* --- Global Background Animations --- */
+@keyframes bg-drift {
+  0% {
+    transform: scale(1.05) translate(0, 0);
+    opacity: 0.25;
+    filter: saturate(1.2) contrast(1.1);
+  }
+
+  50% {
+    opacity: 0.55;
+  }
+
+  100% {
+    transform: scale(1.15) translate(-2%, -2%);
+    opacity: 0.35;
+    filter: saturate(1.5) contrast(1.2);
+  }
+}
+
+@keyframes bg-pan {
+  0% {
+    object-position: 0% 50%;
+    transform: scale(1.1);
+    opacity: 0.2;
+    filter: saturate(1.1);
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    object-position: 100% 50%;
+    transform: scale(1.15);
+    opacity: 0.35;
+    filter: saturate(1.3);
+  }
+}
+
+.animate-bg-drift {
+  animation: bg-drift 20s ease-in-out infinite alternate;
+  will-change: transform, opacity, filter;
+}
+
+.animate-bg-pan {
+  animation: bg-pan 30s ease-in-out infinite alternate;
+  will-change: object-position, opacity, transform, filter;
+}

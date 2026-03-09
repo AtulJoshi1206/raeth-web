@@ -1,0 +1,76 @@
+.domains-section {
+  border: 1px solid var(--border-domains);
+  scroll-margin-top: 80px;
+}
+
+.domains-header {
+  padding: clamp(28px, 4vw, 48px) var(--pad);
+  border-bottom: 1px solid var(--border);
+}
+
+.domains-header .label {
+  margin-bottom: 16px;
+}
+
+.domains-header h2 {
+  font-size: clamp(24px, 3vw, 40px);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.domains-grid {
+  display: flex;
+}
+
+.domain-card {
+  flex: 1;
+  padding: clamp(24px, 3vw, 40px) var(--pad);
+  border-right: 1px solid var(--border);
+  transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  min-height: 160px;
+}
+
+.domain-card:last-child { border-right: none; }
+
+.domain-card:hover {
+  background: var(--bg-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.domain-icon {
+  font-size: 28px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.domain-card h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.domain-card p {
+  color: var(--text-50);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .domains-grid { flex-wrap: wrap; }
+  .domain-card { flex: 1 1 50%; }
+  .domain-card:nth-child(2) { border-right: none; }
+  .domain-card:nth-child(1),
+  .domain-card:nth-child(2) { border-bottom: 1px solid var(--border); }
+}
+
+@media (max-width: 768px) {
+  .domains-grid { flex-direction: column; }
+  .domain-card {
+    flex: none;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+  .domain-card:last-child { border-bottom: none; }
+}

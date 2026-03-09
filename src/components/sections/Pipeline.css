@@ -1,0 +1,200 @@
+.pipeline-section {
+  border: 1px solid var(--border-pipeline);
+  scroll-margin-top: 80px;
+}
+
+.pipeline-header {
+  padding: clamp(32px, 5vw, 56px) var(--pad);
+  border-bottom: 1px solid var(--border);
+}
+
+.pipeline-header .label {
+  margin-bottom: 16px;
+}
+
+.pipeline-header h2 {
+  font-size: clamp(28px, 3.5vw, 44px);
+  font-weight: 700;
+  margin-bottom: 12px;
+  line-height: 1.05;
+}
+
+.pipeline-header p {
+  color: var(--text-44);
+  font-size: 15px;
+  line-height: 1.5;
+  max-width: 500px;
+}
+
+/* ---- Timeline Layout ---- */
+.pipeline-timeline {
+  position: relative;
+  padding: 60px var(--pad) 40px;
+}
+
+.pipeline-spine {
+  position: absolute;
+  left: 50%;
+  top: 60px;
+  bottom: 40px;
+  width: 1px;
+  background: var(--border);
+  transform: translateX(-50%);
+}
+
+.pipeline-spine-fill {
+  width: 100%;
+  background: linear-gradient(to bottom, var(--accent-blue), var(--accent-purple));
+  border-radius: 1px;
+}
+
+/* ---- Card ---- */
+.pipeline-card {
+  position: relative;
+  width: 46%;
+  margin-bottom: 48px;
+}
+
+.pipeline-card--left {
+  margin-right: auto;
+  padding-right: 40px;
+}
+
+.pipeline-card--right {
+  margin-left: auto;
+  padding-left: 40px;
+}
+
+.pipeline-card:last-child {
+  margin-bottom: 0;
+}
+
+/* Dot on the spine */
+.pipeline-card-dot {
+  position: absolute;
+  top: 24px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 2px solid var(--accent-blue);
+  z-index: 2;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pipeline-card--left .pipeline-card-dot {
+  right: -6px;
+}
+
+.pipeline-card--right .pipeline-card-dot {
+  left: -6px;
+}
+
+/* Card content */
+.pipeline-card-content {
+  padding: 24px;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pipeline-card:hover .pipeline-card-content {
+  border-color: rgba(123, 97, 255, 0.5);
+  box-shadow: 0 0 30px rgba(123, 97, 255, 0.15);
+}
+
+.pipeline-card:hover .pipeline-card-dot {
+  border-color: var(--accent-purple);
+  box-shadow: 0 0 12px rgba(123, 97, 255, 0.4);
+}
+
+
+.pipeline-card-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--accent-blue);
+  letter-spacing: 0.08em;
+  display: block;
+  margin-bottom: 12px;
+  transition: color 0.3s ease;
+}
+
+.pipeline-card:hover .pipeline-card-num {
+  color: var(--accent-purple);
+}
+
+.pipeline-card-content h3 {
+  font-size: clamp(18px, 2vw, 22px);
+  font-weight: 600;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.pipeline-card-content p {
+  font-size: 14px;
+  color: var(--text-50);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.pipeline-card-detail {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--text-28);
+  display: block;
+  margin-bottom: 12px;
+}
+
+.pipeline-card-code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--accent-blue);
+  background: rgba(0, 212, 240, 0.04);
+  border: 1px solid rgba(0, 212, 240, 0.1);
+  padding: 12px;
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.pipeline-card-image {
+  margin-top: 12px;
+  height: 80px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.pipeline-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+  filter: brightness(1.1);
+}
+
+/* ---- Mobile: single column ---- */
+@media (max-width: 768px) {
+  .pipeline-spine {
+    left: 20px;
+  }
+
+  .pipeline-card {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 48px;
+    padding-right: 0;
+  }
+
+  .pipeline-card--left {
+    padding-right: 0;
+    padding-left: 48px;
+  }
+
+  .pipeline-card--left .pipeline-card-dot,
+  .pipeline-card--right .pipeline-card-dot {
+    left: -26px;
+    right: auto;
+  }
+}

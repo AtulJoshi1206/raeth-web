@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.perle.ai)",
+      "WebFetch(domain:www.raeth.ai)",
+      "WebFetch(domain:www.primeintellect.ai)",
+      "Bash(mkdir -p public/assets)",
+      "Bash(cp raeth-assets/*.png public/assets/)",
+      "Bash(npm install)",
+      "Bash(npx tsc --noEmit)",
+      "Bash(npx vite build)",
+      "Bash(timeout 5 npx vite --port 3456)",
+      "Read(//Users/atuljoshi/Documents/Projects/Raeth\\\\ AI/Raeth\\\\ AI\\\\ website/src/**)",
+      "Read(//Users/atuljoshi/Documents/Projects/Raeth\\\\ AI/Raeth\\\\ AI\\\\ website/src/styles/**)"
+    ],
+    "additionalDirectories": [
+      "/Users/atuljoshi/Documents/Projects/Raeth AI/Raeth AI website/src"
+    ]
+  }
+}

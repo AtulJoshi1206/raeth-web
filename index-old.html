@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAETH — Training Infrastructure for AI Trading</title>
+  <meta name="description" content="RAETH builds the training infrastructure that turns language models into trading agents.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="#" class="nav-logo">RAETH</a>
+      <div class="nav-links">
+        <a href="#products" class="nav-link">Products</a>
+        <a href="#pipeline" class="nav-link">Research</a>
+        <a href="#domains" class="nav-link">Domains</a>
+        <a href="#contact" class="nav-cta">Get in Touch</a>
+      </div>
+      <button type="button" class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="site-wrapper">
+
+    <!-- ============================
+         HERO (Prime Intellect style)
+         Fixed height, border, bg image,
+         content anchored to bottom
+         ============================ -->
+    <section class="hero s-block reveal">
+      <div class="hero-bg">
+        <img src="raeth-assets/hero-neural-network.png" alt="">
+      </div>
+      <div class="hero-content">
+        <div class="label hero-label">Training Infrastructure for AI Trading</div>
+        <h1>Training Intelligence <span class="text-gradient">That Can Trade</span></h1>
+        <p class="hero-sub">
+          Your model solves reasoning benchmarks. It cannot survive real markets.
+          RAETH builds the <strong>training infrastructure that turns language models into trading agents.</strong>
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn--white">Partner With Us <span class="arrow">&rarr;</span></a>
+          <a href="#problem" class="btn btn--ghost">Explore The Problem</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION DIVIDER -->
+    <div class="section-divider"></div>
+
+    <!-- ============================
+         PHILOSOPHY — Manifesto Card
+         ============================ -->
+    <div class="philosophy-block s-block reveal">
+      <p class="philosophy-q">Where does intelligence come from?</p>
+      <div class="philosophy-body">
+        <p class="em">Experience.</p>
+        <p class="red">
+          Markets collapsing. Currencies breaking.<br>
+          Billions moving in minutes.
+        </p>
+        <p>Thousands of decisions under uncertainty.</p>
+        <p>Patterns emerging from chaos.</p>
+        <p class="spacer em">
+          Data does for artificial intelligence<br>
+          what life does for humans.
+        </p>
+        <p class="em">It turns capability into judgment.</p>
+      </div>
+    </div>
+
+    <!-- SECTION DIVIDER -->
+    <div class="section-divider"></div>
+
+    <!-- ============================
+         REALITY OF MARKETS
+         ============================ -->
+    <section class="markets-section s-block reveal">
+      <div class="markets-inner">
+        <div class="markets-text">
+          <div class="label">The Reality</div>
+          <h2>Markets are not problems.<br><span class="accent">They are ecosystems.</span></h2>
+          <div class="markets-body">
+            <p>Every trade changes the environment.</p>
+            <p class="market-list">
+              Signals are incomplete.<br>
+              Information is asymmetric.<br>
+              Capital is at risk.
+            </p>
+            <p>Millions of agents compete simultaneously,<br>each reacting to the actions of others.</p>
+            <p class="market-emphasis">This is not a benchmark.</p>
+            <p class="market-emphasis">This is a living system.</p>
+          </div>
+        </div>
+        <div class="markets-visual">
+          <img src="raeth-assets/market-chaos.png" alt="Market ecosystem">
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION DIVIDER -->
+    <div class="section-divider"></div>
+
+    <!-- ============================
+         PROBLEM (bordered section)
+         ============================ -->
+    <section id="problem" class="problem-section s-block reveal">
+      <div class="problem-bg" aria-hidden="true">
+        <img src="raeth-assets/market-chaos.png" alt="">
+      </div>
+      <div class="problem-inner">
+        <!-- Header row -->
+        <div class="problem-header">
+          <div class="label">The Problem</div>
+          <h2>AI can reason about math.<br><span class="accent">It cannot trade.</span></h2>
+          <p>GPT-4, Claude, and Gemini dominate reasoning benchmarks. But markets are adversarial, dynamic systems where information is incomplete and every decision changes the environment.</p>
+        </div>
+        <!-- Comparison row (2 columns) -->
+        <div class="comparison">
+          <div class="comparison-col">
+            <div class="comparison-col-label">Static Reasoning</div>
+            <div class="comparison-item"><span class="dot dot--muted"></span> Single correct answer</div>
+            <div class="comparison-item"><span class="dot dot--muted"></span> Full information</div>
+            <div class="comparison-item"><span class="dot dot--muted"></span> No consequences</div>
+          </div>
+          <div class="comparison-col">
+            <div class="comparison-col-label active">Trading</div>
+            <div class="comparison-item bright"><span class="dot dot--blue"></span> Probabilistic outcomes</div>
+            <div class="comparison-item bright"><span class="dot dot--blue"></span> Incomplete signals</div>
+            <div class="comparison-item bright"><span class="dot dot--blue"></span> Capital at risk</div>
+          </div>
+        </div>
+        <!-- Bottom row: callout + quote -->
+        <div class="problem-bottom">
+          <div class="problem-callout">
+            <p>Alpha Arena experiments showed frontier models losing over <span class="stat">80%</span> of capital in live trading environments.</p>
+          </div>
+          <div class="problem-quote">
+            "Soros didn't solve equations. He reasoned about political pressure, market psychology, and the sustainability of economic systems."
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+         METRICS (4-col border grid)
+         ============================ -->
+    <div class="metrics-grid s-block reveal">
+      <div class="metrics-bg">
+        <img src="raeth-assets/metrics-particles.png" alt="">
+      </div>
+      <div class="metric">
+        <div class="metric-val"><span class="grad">$30M+</span></div>
+        <div class="metric-desc">Founder trading track record</div>
+      </div>
+      <div class="metric">
+        <div class="metric-val">8 <span class="unit">Yrs</span></div>
+        <div class="metric-desc">Market data history</div>
+      </div>
+      <div class="metric">
+        <div class="metric-val">Elite</div>
+        <div class="metric-desc">Professional trading background</div>
+      </div>
+      <div class="metric">
+        <div class="metric-val">4</div>
+        <div class="metric-desc">Trading domains covered</div>
+      </div>
+    </div>
+
+    <!-- SECTION DIVIDER -->
+    <div class="section-divider"></div>
+
+    <!-- ============================
+         PRODUCTS (bordered section
+         with header + 2x2 card grid)
+         ============================ -->
+    <section id="products" class="products-section s-block reveal">
+      <div class="products-header">
+        <div class="products-header-bg">
+          <img src="raeth-assets/tech-grid.png" alt="">
+        </div>
+        <div class="products-header-text">
+          <div class="label">What We Build</div>
+          <h2>Training Infrastructure<br>for AI Trading</h2>
+          <p>From supervised learning to reinforcement learning environments — the full pipeline for training trading intelligence.</p>
+        </div>
+      </div>
+
+      <div class="products-cards">
+        <div class="product-card">
+          <span class="product-num">01</span>
+          <h3>SFT Training Pairs</h3>
+          <span class="product-tag">Expert reasoning traces with verified P&L</span>
+          <p>Models learn how experienced traders interpret signals, manage risk, and act under uncertainty — from real decisions, not synthetic data.</p>
+        </div>
+        <div class="product-card">
+          <span class="product-num">02</span>
+          <h3>Trading Evaluations</h3>
+          <span class="product-tag">Benchmarks designed by professional traders</span>
+          <p>Measure what actually matters: risk management, drawdown control, and alpha generation across market regimes.</p>
+        </div>
+        <div class="product-card">
+          <span class="product-num">03</span>
+          <h3>RL Trading Gym</h3>
+          <span class="product-tag">Production-grade reinforcement learning</span>
+          <p>Order book simulation, market impact modeling, slippage, and regime changes — realistic environments for training agents.</p>
+        </div>
+        <div class="product-card">
+          <span class="product-num">04</span>
+          <h3>Expert RLHF</h3>
+          <span class="product-tag">Human feedback from experienced traders</span>
+          <p>Fine-tuning models to align with profitable trading behavior through feedback from professionals with verified track records.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION DIVIDER -->
+    <div class="section-divider"></div>
+
+    <!-- ============================
+         PIPELINE (bordered section)
+         ============================ -->
+    <section id="pipeline" class="pipeline-section s-block reveal">
+      <div class="pipeline-header">
+        <div class="label">How It Works</div>
+        <h2>Training Pipeline</h2>
+        <p>The entire stack required to transform generalized reasoning into specialized market execution.</p>
+      </div>
+
+      <div class="pipeline-visual reveal">
+        <img src="raeth-assets/training-pipeline.png" alt="Training Pipeline">
+      </div>
+
+      <div class="pipeline-steps reveal">
+        <div class="pipeline-step">Market Data</div>
+        <div class="pipeline-step">Expert Traces</div>
+        <div class="pipeline-step">Training Dataset</div>
+        <div class="pipeline-step">Eval Benchmarks</div>
+        <div class="pipeline-step">RL Environments</div>
+        <div class="pipeline-step active">Trading Models</div>
+      </div>
+    </section>
+
+    <!-- SECTION DIVIDER -->
+    <div class="section-divider"></div>
+
+    <!-- ============================
+         DOMAINS (4-col section)
+         ============================ -->
+    <section id="domains" class="domains-section s-block reveal">
+      <div class="domains-header">
+        <div class="label">Coverage</div>
+        <h2>Four Market Domains.<br>Four Styles of Intelligence.</h2>
+      </div>
+
+      <div class="domains-grid">
+        <div class="domain-card">
+          <span class="domain-icon">&#9889;</span>
+          <h4>HFT</h4>
+          <p>Sub-second signals. Market microstructure reasoning. Latency-sensitive decision making.</p>
+        </div>
+        <div class="domain-card">
+          <span class="domain-icon">&#9878;</span>
+          <h4>Statistical Arbitrage</h4>
+          <p>Factor models, cross-asset signals, mean-reversion strategies across correlated instruments.</p>
+        </div>
+        <div class="domain-card">
+          <span class="domain-icon">&#127758;</span>
+          <h4>Macro Trading</h4>
+          <p>Geopolitics, interest rates, global capital flows. Multi-horizon directional positioning.</p>
+        </div>
+        <div class="domain-card">
+          <span class="domain-icon">&#9650;</span>
+          <h4>Fundamental</h4>
+          <p>Valuation, earnings analysis, long-term capital allocation based on company fundamentals.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION DIVIDER -->
+    <div class="section-divider"></div>
+
+    <!-- ============================
+         DATA QUALITY
+         ============================ -->
+    <section class="quality-section s-block reveal">
+      <div class="quality-bg">
+        <img src="raeth-assets/ai-compute-cluster.png" alt="">
+      </div>
+      <div class="quality-inner">
+        <div class="quality-header">
+          <div class="label">Data Integrity</div>
+          <h2>Built on real trades.<br>Validated by real P&L.</h2>
+          <p>High-performance AI requires robust, verifiable, production-grade data.</p>
+        </div>
+
+        <div class="quality-cards">
+          <div class="quality-card">
+            <div class="quality-icon">&#10003;</div>
+            <h4>Verified Track Records</h4>
+            <p>All contributors have documented trading performance and multi-year market experience across asset classes.</p>
+          </div>
+          <div class="quality-card">
+            <div class="quality-icon">&#9670;</div>
+            <h4>Production-Grade Data</h4>
+            <p>Real market dynamics captured accurately — order books, slippage modeling, volatility regime shifts.</p>
+          </div>
+          <div class="quality-card">
+            <div class="quality-icon">&#9632;</div>
+            <h4>Multi-Domain Coverage</h4>
+            <p>Comprehensive datasets spanning HFT, statistical arbitrage, macro, and fundamental trading strategies.</p>
+          </div>
+        </div>
+
+        <div class="quality-footer">
+          <p><strong>Every contributor has a verified multi-year trading record.</strong><br>Every dataset reflects real market conditions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION DIVIDER -->
+    <div class="section-divider"></div>
+
+    <!-- ============================
+         CTA (asymmetric layout)
+         ============================ -->
+    <section id="contact" class="cta-section s-block reveal">
+      <div class="cta-glow"></div>
+      <div class="cta-text">
+        <h2>Teach Your Model To Trade <span class="text-gradient">Real Markets</span></h2>
+        <p>We partner with AI labs building the next generation of decision-making systems. Training data. Evaluation frameworks. Market environments.</p>
+        <div class="cta-actions">
+          <a href="mailto:vihan@raeth.ai" class="btn btn--white">Partner With Us <span class="arrow">&rarr;</span></a>
+          <a href="mailto:vihan@raeth.ai" class="btn btn--ghost">Contact Research Team</a>
+        </div>
+        <a href="mailto:vihan@raeth.ai" class="cta-email">
+          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          vihan@raeth.ai
+        </a>
+      </div>
+      <div class="cta-visual">
+        <img src="raeth-assets/hero-neural-network.png" alt="">
+      </div>
+    </section>
+
+  </div><!-- /site-wrapper -->
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">RAETH</div>
+          <p>Training infrastructure for AI trading systems. Built for the future of markets.</p>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h5>Products</h5>
+            <ul>
+              <li><a href="#products">SFT Training Pairs</a></li>
+              <li><a href="#products">Trading Evaluations</a></li>
+              <li><a href="#products">RL Trading Gym</a></li>
+              <li><a href="#products">Expert RLHF</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Research</h5>
+            <ul>
+              <li><a href="#pipeline">Methodology</a></li>
+              <li><a href="#pipeline">Datasets</a></li>
+              <li><a href="#pipeline">Documentation</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Domains</h5>
+            <ul>
+              <li><a href="#domains">HFT</a></li>
+              <li><a href="#domains">Statistical Arbitrage</a></li>
+              <li><a href="#domains">Macro</a></li>
+              <li><a href="#domains">Fundamental</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 RAETH. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="mailto:vihan@raeth.ai">Contact</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="src/scripts/main.js"></script>
+</body>
+</html>
