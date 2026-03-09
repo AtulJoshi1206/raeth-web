@@ -85,6 +85,10 @@
 }
 
 @media (max-width: 768px) {
+  .hero {
+    margin-top: 80px;
+  }
+
   .hero-actions {
     flex-direction: column;
     align-items: flex-start;
