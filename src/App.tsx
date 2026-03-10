@@ -9,6 +9,7 @@ import Problem from './components/sections/Problem'
 import Metrics from './components/sections/Metrics'
 import Products from './components/sections/Products'
 import Pipeline from './components/sections/Pipeline'
+import CoreSections from './components/sections/CoreSections'
 import Domains from './components/sections/Domains'
 import DataQuality from './components/sections/DataQuality'
 import CTA from './components/sections/CTA'
@@ -54,6 +55,8 @@ export default function App() {
         <Products />
         <SectionDivider />
         <Pipeline />
+        <SectionDivider />
+        <CoreSections />
         <SectionDivider />
         <Domains />
         <SectionDivider />

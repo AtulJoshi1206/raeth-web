@@ -43,7 +43,7 @@ export default function Navbar() {
         </a>
         <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
           <a href="/#products" className="nav-link" onClick={handleLinkClick}>Products</a>
-          <a href="/#pipeline" className="nav-link" onClick={handleLinkClick}>Research</a>
+          <a href="/#research" className="nav-link" onClick={handleLinkClick}>Research</a>
           <a href="/#domains" className="nav-link" onClick={handleLinkClick}>Domains</a>
           <a href="/#contact" className="nav-cta" onClick={handleLinkClick}>Get in Touch</a>
         </div>

@@ -23,11 +23,12 @@ export default function Philosophy() {
               viewport={{ once: true, margin: '-40px' }}
               transition={{ duration: 1, delay: 0.4, ease: 'easeOut' }}
             >
-              Markets collapsing. Currencies breaking.<br />
+              Markets collapsing.<br />
+              Currencies breaking.<br />
               Billions moving in minutes.
             </motion.p>
             <p>Thousands of decisions under uncertainty.</p>
-            <p>Patterns emerging from chaos.</p>
+            <p className="spacer">Patterns emerging from chaos.</p>
             <p className="spacer em">
               Data does for artificial intelligence<br />
               what life does for humans.

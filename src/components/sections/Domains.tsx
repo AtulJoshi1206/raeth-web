@@ -3,8 +3,8 @@ import './Domains.css'
 
 const domains = [
   { icon: '⚡', title: 'HFT', desc: 'Sub-second signals. Market microstructure reasoning. Latency-sensitive decision making.' },
-  { icon: '⚖', title: 'Statistical Arbitrage', desc: 'Factor models, cross-asset signals, mean-reversion strategies across correlated instruments.' },
-  { icon: '🌎', title: 'Macro Trading', desc: 'Geopolitics, interest rates, global capital flows. Multi-horizon directional positioning.' },
+  { icon: '🕸', title: 'Statistical Arbitrage', desc: 'Factor models, cross-asset signals, mean-reversion strategies across correlated instruments.' },
+  { icon: '🌍', title: 'Macro Trading', desc: 'Geopolitics, interest rates, global capital flows. Multi-horizon directional positioning.' },
   { icon: '▲', title: 'Fundamental', desc: 'Valuation, earnings analysis, long-term capital allocation based on company fundamentals.' },
 ]
 

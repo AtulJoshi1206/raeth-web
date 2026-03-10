@@ -1,0 +1,98 @@
+.core-sections {
+    padding: clamp(80px, 10vw, 140px) 0;
+}
+
+.core-inner {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 0 var(--pad);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--border);
+}
+
+.core-card {
+    padding: clamp(28px, 3vw, 40px);
+    background: var(--bg);
+    display: flex;
+    flex-direction: column;
+}
+
+.core-card .label {
+    margin-bottom: 16px;
+}
+
+.core-card .label--dim {
+    opacity: 0.6;
+}
+
+.core-card h3 {
+    font-size: clamp(24px, 2.5vw, 32px);
+    font-weight: 700;
+    margin-bottom: 24px;
+    line-height: 1.1;
+    color: #fff;
+}
+
+.core-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.core-body p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.65;
+    margin: 0;
+}
+
+.core-em {
+    color: var(--accent-blue) !important;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.core-sub {
+    color: var(--text-primary) !important;
+    font-weight: 500;
+    margin-top: 6px;
+}
+
+.core-list {
+    list-style: none;
+    padding: 0;
+    margin: 4px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.core-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.core-list .dot {
+    width: 5px;
+    height: 5px;
+    background: var(--accent-blue);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.core-card .section-link {
+    margin-top: 24px;
+}
+
+@media (max-width: 900px) {
+    .core-inner {
+        grid-template-columns: 1fr;
+    }
+}

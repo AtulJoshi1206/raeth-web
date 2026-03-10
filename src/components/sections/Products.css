@@ -109,7 +109,7 @@
 
 .product-card:nth-child(1) .product-tag { color: var(--accent-blue); }
 .product-card:nth-child(2) .product-tag { color: var(--accent-purple); }
-.product-card:nth-child(3) .product-tag { color: var(--accent-red); }
+.product-card:nth-child(3) .product-tag { color: var(--accent-purple); }
 .product-card:nth-child(4) .product-tag { color: var(--accent-blue); }
 
 .product-card p {
@@ -117,6 +117,18 @@
   font-size: 14px;
   line-height: 1.6;
   max-width: 360px;
+}
+
+.products-footer {
+  padding: 20px var(--pad);
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.products-footer p {
+  font-size: 14px;
+  color: var(--text-44);
+  line-height: 1.6;
 }
 
 @media (max-width: 768px) {

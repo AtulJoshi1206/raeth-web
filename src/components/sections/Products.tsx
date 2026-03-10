@@ -47,9 +47,6 @@ export default function Products() {
         viewport={{ once: true, margin: '-60px' }}
         transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
       >
-        <div className="products-header-bg">
-          <img src="/assets/tech-grid.png" alt="" className="animate-bg-pan" />
-        </div>
         <div className="products-header-text">
           <div className="label">What We Build</div>
           <h2>Training Infrastructure<br />for AI Trading</h2>
@@ -75,6 +72,16 @@ export default function Products() {
           </motion.div>
         ))}
       </div>
+
+      <motion.div
+        className="products-footer"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, margin: '-40px' }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+      >
+        <p>These components form the RAETH system — an infrastructure for training decision-making AI agents.</p>
+      </motion.div>
     </section>
   )
 }

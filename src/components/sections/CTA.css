@@ -3,6 +3,7 @@
   display: flex;
   position: relative;
   overflow: hidden;
+  background: radial-gradient(circle at center, rgba(0,230,255,0.12), transparent 70%);
 }
 
 .cta-glow {
@@ -10,9 +11,11 @@
   right: 20%;
   top: 50%;
   transform: translateY(-50%);
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(123,97,255,0.06), transparent 70%);
+  width: 600px;
+  height: 600px;
+  background:
+    radial-gradient(circle at center, rgba(0,230,255,0.15), transparent 70%),
+    radial-gradient(circle at 60% 40%, rgba(123,97,255,0.08), transparent 60%);
   pointer-events: none;
 }
 

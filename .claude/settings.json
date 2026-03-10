@@ -11,7 +11,8 @@
       "Bash(npx vite build)",
       "Bash(timeout 5 npx vite --port 3456)",
       "Read(//Users/atuljoshi/Documents/Projects/Raeth\\\\ AI/Raeth\\\\ AI\\\\ website/src/**)",
-      "Read(//Users/atuljoshi/Documents/Projects/Raeth\\\\ AI/Raeth\\\\ AI\\\\ website/src/styles/**)"
+      "Read(//Users/atuljoshi/Documents/Projects/Raeth\\\\ AI/Raeth\\\\ AI\\\\ website/src/styles/**)",
+      "Read(//Users/atuljoshi/Documents/Projects/Raeth\\\\ AI/Raeth\\\\ AI\\\\ website/**)"
     ],
     "additionalDirectories": [
       "/Users/atuljoshi/Documents/Projects/Raeth AI/Raeth AI website/src"

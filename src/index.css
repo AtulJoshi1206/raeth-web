@@ -40,7 +40,7 @@
   --border-hero: rgba(255, 255, 255, 0.08);
   --border-products: rgba(0, 230, 255, 0.12);
   --border-pipeline: rgba(122, 92, 255, 0.12);
-  --border-domains: rgba(255, 77, 77, 0.12);
+  --border-domains: rgba(122, 92, 255, 0.12);
 
   /* Layout */
   --max-w: 1280px;

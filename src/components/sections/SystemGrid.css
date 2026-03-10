@@ -1,0 +1,70 @@
+.system-section {
+    padding: clamp(80px, 10vw, 140px) 0;
+}
+
+.system-inner {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 0 var(--pad);
+}
+
+.system-header {
+    margin-bottom: 56px;
+}
+
+.system-header .label {
+    margin-bottom: 16px;
+}
+
+.system-header h2 {
+    font-size: clamp(24px, 3vw, 40px);
+    font-weight: 700;
+    line-height: 1.1;
+    color: #fff;
+}
+
+.system-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.system-card {
+    padding: 22px;
+    border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.02);
+    transition: background 0.25s ease, box-shadow 0.25s ease;
+    cursor: default;
+}
+
+.system-card:hover {
+    background: rgba(255,255,255,0.04);
+    box-shadow: 0 0 18px rgba(0,230,255,0.12);
+}
+
+.system-card h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.system-card p {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 900px) {
+    .system-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .system-grid {
+        grid-template-columns: 1fr;
+    }
+}
